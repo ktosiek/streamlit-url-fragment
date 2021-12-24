@@ -1,1 +1,1 @@
-recursive-include streamlit_url_fragment/frontend/build *
+recursive-include streamlit_url_fragment/build *

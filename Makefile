@@ -1,14 +1,13 @@
 version = 0.1.0
 
-python_sources = $(wildcard streamlit_url_fragment/*.py) pyproject.toml
+python_sources = $(wildcard streamlit_url_fragment/*.py) pyproject.toml MANIFEST.in
 js_sources := $(wildcard streamlit_url_fragment/public/*) $(wildcard streamlit_url_fragment/src/*) streamlit_url_fragment/tsconfig.json
 js_npm_install_marker = streamlit_url_fragment/node_modules/.package-lock.json
 
+build: streamlit_url_fragment/build/index.html sdist wheels
 
-build: \
-	streamlit_url_fragment/build/index.html \
-	dist/streamlit-url-fragment-$(version).tar.gz \
-	dist/streamlit_url_fragment-$(version)-py3-none-any.whl
+sdist: dist/streamlit-url-fragment-$(version).tar.gz
+wheels: dist/streamlit_url_fragment-$(version)-py3-none-any.whl
 
 dist/streamlit-url-fragment-$(version).tar.gz: $(python_sources) streamlit_url_fragment/build/index.html
 	poetry build -f sdist
