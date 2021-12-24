@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "streamlit-query-fragment"
+name = "streamlit-url-fragment"
 version = "0.1.0"
 description = "Get the URL fragment (part after #) from Streamlit"
 authors = ["Tomasz Kontusz <tomasz.kontusz@gmail.com>"]

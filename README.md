@@ -1,9 +1,9 @@
-# Streamlit query fragment
+# Streamlit URL fragment
 
-Get the query fragment (the part of URL after #) in your Streamlit script:
+Get the URL fragment (the part of URL after #) in your Streamlit script:
 ```python
 import streamlit as st
-from streamlit_query_fragment import get_fragment
+from streamlit_url_fragment import get_fragment
 
 current_value = get_fragment()
 st.write("Current value: {!r}".format(get_fragment()))

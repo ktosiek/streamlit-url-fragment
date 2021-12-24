@@ -3,4 +3,4 @@
 node_modules/
 
 dist/
-streamlit_query_fragment/build/
+streamlit_url_fragment/build/

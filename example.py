@@ -1,10 +1,10 @@
 import streamlit as st
 
 
-st.header("""Access query fragment (query "hash") from Streamlit""")
+st.header("""Access URL fragment ("hash") from Streamlit""")
 
 with st.echo():
-    from streamlit_query_fragment import get_fragment
+    from streamlit_url_fragment import get_fragment
 
     current_value = get_fragment()
     st.write(f"Current value: {current_value!r}")
