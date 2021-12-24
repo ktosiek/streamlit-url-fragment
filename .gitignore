@@ -1,0 +1,6 @@
+*.pyc
+*.pyo
+node_modules/
+
+dist/
+streamlit_query_fragment/build/
