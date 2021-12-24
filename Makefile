@@ -1,4 +1,4 @@
-version = 0.1.0
+version = 0.1.1
 
 python_sources = $(wildcard streamlit_url_fragment/*.py) pyproject.toml MANIFEST.in
 js_sources := $(wildcard streamlit_url_fragment/public/*) $(wildcard streamlit_url_fragment/src/*) streamlit_url_fragment/tsconfig.json
