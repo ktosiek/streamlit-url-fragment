@@ -1,6 +1,6 @@
 version = 0.1.0
 
-python_sources = $(wildcard streamlit_query_fragment/*.py)
+python_sources = $(wildcard streamlit_query_fragment/*.py) pyproject.toml
 js_sources := $(wildcard streamlit_query_fragment/public/*) $(wildcard streamlit_query_fragment/src/*) streamlit_query_fragment/tsconfig.json
 js_npm_install_marker = streamlit_query_fragment/node_modules/.package-lock.json
 
