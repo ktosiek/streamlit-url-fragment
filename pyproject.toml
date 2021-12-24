@@ -5,6 +5,8 @@ description = "Get the URL fragment (part after #) from Streamlit"
 authors = ["Tomasz Kontusz <tomasz.kontusz@gmail.com>"]
 license = "Apache-2.0"
 
+readme = "README.md"
+
 [tool.poetry.dependencies]
 python = "^3.9"
 streamlit = ">0.63"
