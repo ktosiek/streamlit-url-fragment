@@ -1,12 +1,12 @@
 import {Streamlit} from "streamlit-component-lib"
 
-const topWindow: Window = window.top || window;
+const targetWindow: Window = window.parent;
 
 const hashChangeHandler = () => {
-    Streamlit.setComponentValue(topWindow.location.hash)
+    Streamlit.setComponentValue(targetWindow.location.hash)
 }
 
-topWindow.addEventListener('hashchange', hashChangeHandler)
+targetWindow.addEventListener('hashchange', hashChangeHandler)
 Streamlit.setComponentReady()
 hashChangeHandler()
 Streamlit.setFrameHeight(0)
