@@ -1,0 +1,2 @@
+(this.webpackJsonpget_fragment=this.webpackJsonpget_fragment||[]).push([[0],{5:function(e,t,n){"use strict";n.r(t);var a=n(2),s=window.parent,o=function(){a.a.setComponentValue(s.location.hash)};s.addEventListener("hashchange",o),a.a.setComponentReady(),o(),a.a.setFrameHeight(0)}},[[5,1,2]]]);
+//# sourceMappingURL=main.171be1f5.chunk.js.map
