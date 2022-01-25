@@ -12,8 +12,9 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
 streamlit = ">0.63"
+importlib-resources = "^5.4.0"
 
 [tool.poetry.dev-dependencies]
 
